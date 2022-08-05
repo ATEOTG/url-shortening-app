@@ -1,0 +1,11 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+
+.mobile-icon {
+  width: 32px;
+  height: 32px;
+  color: var(--gray-violet);
+}
