@@ -1,0 +1,26 @@
+.feature-card h3,
+.feature-card p {
+  text-align: center;
+}
+
+.feature-card h3 {
+  margin-bottom: 0.5em;
+  color: var(--dark-violet);
+}
+
+.feature-card p {
+  font-size: 1.5rem;
+  color: var(--gray-violet);
+}
+
+.vertical-cont {
+  position: absolute;
+}
+
+.vertical-line {
+  position: absolute;
+  left: -3.5px;
+  bottom: -740px;
+  height: 60rem;
+  border-left: 8px solid var(--cyan);
+}

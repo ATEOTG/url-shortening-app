@@ -5,7 +5,11 @@ import image from "../assets/images/illustration-working.svg";
 function Header() {
   return (
     <header>
-      <img className={classes.illustration} src={image} />
+      <img
+        className={classes.illustration}
+        src={image}
+        alt="drawing of person using computer"
+      />
       <div className={classes["header-text"]}>
         <h1>More than just shorter links</h1>
         <p>
