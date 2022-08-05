@@ -2,6 +2,7 @@
 
 :root {
   --cyan: hsl(180, 66%, 49%);
+  --cyan-light: #9ae3e3;
   --drk-violet: hsl(257, 27%, 26%);
   --red: hsl(0, 87%, 67%);
   --gray: hsl(0, 0%, 75%);
@@ -17,6 +18,7 @@
 }
 
 html {
+  overflow: hidden;
   font-size: 62.5%;
 }
 
