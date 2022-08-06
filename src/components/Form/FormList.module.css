@@ -1,0 +1,45 @@
+.list-cont {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  margin-bottom: 4em;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.user-link {
+  font-size: 1.6rem;
+  padding: 1em 1em 0em 1em;
+  color: var(--dark-violet);
+}
+
+#shortened-link-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding: 0em 1em 1em 1em;
+}
+
+#shortened-link-section button {
+  font-size: 1.6rem;
+  border-radius: 5px;
+  padding: 0.5em 2em;
+}
+
+.shortened-link {
+  font-size: 1.6rem;
+  color: var(--cyan);
+}
+
+.horizontal-line {
+  align-self: flex-start;
+  width: 100%;
+  border-top: 1px solid var(--gray);
+}
