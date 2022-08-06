@@ -1,4 +1,5 @@
 .navigation {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin-top: 2em;
@@ -9,4 +10,8 @@
   width: 32px;
   height: 32px;
   color: var(--gray-violet);
+}
+
+.nav-menu {
+  position: relative;
 }

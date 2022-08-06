@@ -3,6 +3,7 @@ import classes from "./Navigation.module.css";
 import logo from "../assets/images/logo.svg";
 import { RiMenuFill } from "react-icons/ri";
 import { RiCloseLine } from "react-icons/ri";
+import DropdownMenu from "./DropdownMenu";
 
 function Navigation() {
   const [menuToggle, setMenuToggle] = useState(false);
@@ -34,7 +35,8 @@ function Navigation() {
       <div>
         <img src={logo} alt="shortly-logo" />
       </div>
-      <div>{menu}</div>
+      <div className={classes["nav-menu"]}>{menu}</div>
+      {menuToggle && <DropdownMenu />}
     </div>
   );
 }
