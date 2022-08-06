@@ -1,4 +1,8 @@
 .features {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 10em;
   padding-bottom: 5em;
   background-color: var(--background);

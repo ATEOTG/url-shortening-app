@@ -1,4 +1,8 @@
-form {
+#form {
+  position: absolute;
+  top: 0;
+  transform: translate(0%, -50%);
+
   max-width: 500px;
   width: 90%;
   display: flex;
