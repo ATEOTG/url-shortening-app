@@ -1,0 +1,17 @@
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5.3em 1em;
+  gap: 1em;
+  background-image: url("../assets/images/bg-boost-mobile.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-color: var(--drk-violet);
+}
+
+.sign-up h2 {
+  color: white;
+}

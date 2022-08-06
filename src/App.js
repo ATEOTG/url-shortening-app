@@ -3,6 +3,7 @@ import "./App.css";
 import Navigation from "./components/Navigation";
 import Header from "./components/Header";
 import Feature from "./components/Feature/Feature";
+import SignUp from "./components/SignUp";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Header />
         </div>
         <Feature />
+        <SignUp />
       </main>
       <footer></footer>
     </Fragment>
