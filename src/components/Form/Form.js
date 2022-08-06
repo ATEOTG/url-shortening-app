@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import CTAButton from "../UI/CTAButton";
 import classes from "./Form.module.css";
 
-function Form() {
+function Form(props) {
   const [isValid, setIsValid] = useState(true);
   const inputValue = useRef();
 
@@ -10,12 +10,23 @@ function Form() {
     event.preventDefault();
     const userLink = inputValue.current.value;
 
-    if (userLink.trim() == "") {
+    const response = await fetch(
+      `https://api.shrtco.de/v2/shorten?url=${userLink}`
+    );
+
+    if (!response.ok) {
       setIsValid(false);
       inputValue.current.value = "";
       return;
     }
+    const data = await response.json();
+    const shortLink = data.result.short_link;
 
+    props.onUserSubmission({
+      id: data.result.code,
+      initialLink: userLink,
+      shortenedLink: shortLink,
+    });
     setIsValid(true);
     inputValue.current.value = "";
   }
@@ -31,7 +42,7 @@ function Form() {
           className={`${classes["input-field"]} ${classes[errorClass]}`}
           placeholder="Shorten a link here..."
         />
-        {!isValid && <p>Please add a link</p>}
+        {!isValid && <p>Please add a valid link</p>}
       </div>
       <CTAButton type={"submit"}>Shorten it!</CTAButton>
     </form>

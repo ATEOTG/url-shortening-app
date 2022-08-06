@@ -1,13 +1,20 @@
+import React, { useState } from "react";
 import Form from "../Form/Form";
 import FormList from "../Form/FormList";
 import classes from "./Feature.module.css";
 import FeatureCards from "./FeatureCards";
 
 function Feature() {
+  const [linkList, setlinkList] = useState([]);
+
+  function userLinkHandler(link) {
+    setlinkList((prevState) => [...prevState, link]);
+  }
+
   return (
     <div className={classes.features}>
-      <Form />
-      <FormList />
+      <Form onUserSubmission={userLinkHandler} />
+      <FormList userLinks={linkList} />
       <div className={"container"}>
         <div className={classes["feature-intro"]}>
           <h2>Advanced Statistics</h2>

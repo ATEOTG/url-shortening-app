@@ -1,23 +1,23 @@
-// import CTAButton from "../UI/CTAButton";
+import CTAButton from "../UI/CTAButton";
 import classes from "./FormList.module.css";
 
-// const DUMMY_LIST = [
-//   { link: "https://www.frontendmentor.io", shortened: "https://rel.ink/k4Kyk" },
-// ];
-
-function FormList() {
-  return (
-    <div className={classes["list-cont"]}>
-      {/* <div className={classes["form-item"]}>
-        <p className={classes["user-link"]}>{DUMMY_LIST[0].link}</p>
-        <div className={classes["horizontal-line"]}></div>
-        <div id={classes["shortened-link-section"]}>
-          <p className={classes["shortened-link"]}>{DUMMY_LIST[0].shortened}</p>
-          <CTAButton>Copy</CTAButton>
+function FormList(props) {
+  const renderList = props.userLinks.map((link) => {
+    return (
+      <li key={link.id}>
+        <div className={classes["form-item"]}>
+          <p className={classes["user-link"]}>{link.initialLink}</p>
+          <div className={classes["horizontal-line"]}></div>
+          <div id={classes["shortened-link-section"]}>
+            <p className={classes["shortened-link"]}>{link.shortenedLink}</p>
+            <CTAButton>Copy</CTAButton>
+          </div>
         </div>
-      </div> */}
-    </div>
-  );
+      </li>
+    );
+  });
+
+  return <ul className={classes["list-cont"]}>{renderList}</ul>;
 }
 
 export default FormList;
