@@ -8,7 +8,11 @@ function Feature() {
   const [linkList, setlinkList] = useState([]);
 
   function userLinkHandler(link) {
-    setlinkList((prevState) => [...prevState, link]);
+    if (linkList.length === 3) {
+      setlinkList((prevState) => [link, ...prevState.slice(0, 2)]);
+    } else {
+      setlinkList((prevState) => [...prevState, link]);
+    }
   }
 
   return (
