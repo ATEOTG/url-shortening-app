@@ -4,6 +4,7 @@ import Navigation from "./components/Navigation";
 import Header from "./components/Header";
 import Feature from "./components/Feature/Feature";
 import SignUp from "./components/SignUp";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <Feature />
         <SignUp />
       </main>
-      <footer></footer>
+      <Footer />
     </Fragment>
   );
 }
