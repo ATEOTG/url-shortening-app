@@ -1,15 +1,17 @@
-footer,
+footer {
+  background-color: var(--dark-violet);
+}
+
+.footer,
 .footer-navs,
 .footer-nav,
 .navigation {
   display: flex;
   flex-direction: column;
 }
-
-footer {
+.footer {
   align-items: center;
   gap: 2em;
-  background-color: var(--dark-violet);
   padding: 3em 0;
 }
 
@@ -49,4 +51,37 @@ footer {
   margin-top: 1em;
   display: flex;
   gap: 1.5em;
+}
+
+@media (min-width: 56em) {
+  .footer,
+  .footer-navs {
+    flex-direction: row;
+  }
+
+  .footer {
+    justify-content: center;
+    gap: 5em;
+  }
+
+  .footer-navs {
+    gap: 3em;
+  }
+
+  .logo {
+    align-self: flex-start;
+  }
+
+  .navigation {
+    align-items: flex-start;
+  }
+
+  .navigation li {
+    text-align: start;
+  }
+
+  .social-media-logos {
+    align-items: flex-start;
+    margin-top: 0;
+  }
 }
