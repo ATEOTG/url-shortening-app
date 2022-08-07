@@ -11,7 +11,7 @@ function Feature() {
     if (linkList.length === 3) {
       setlinkList((prevState) => [link, ...prevState.slice(0, 2)]);
     } else {
-      setlinkList((prevState) => [...prevState, link]);
+      setlinkList((prevState) => [link, ...prevState]);
     }
   }
 
