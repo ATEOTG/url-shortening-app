@@ -36,6 +36,7 @@
     width: 100%;
     align-items: center;
     gap: 2.5em;
+    margin-bottom: 2.5em;
   }
 
   .desktop-nav {

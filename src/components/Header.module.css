@@ -30,3 +30,41 @@ header {
   color: var(--gray-violet);
   margin-bottom: 2em;
 }
+
+@media (min-width: 57em) {
+  header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2em;
+  }
+
+  .header-text {
+    align-items: flex-start;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .header-text h1,
+  .header-text p {
+    text-align: left;
+  }
+
+  .header-text h1 {
+    font-size: 5rem;
+  }
+
+  .illustration {
+    width: 165%;
+    grid-column: 2/2;
+  }
+}
+
+@media (min-width: 72.5em) {
+  .header-text h1 {
+    font-size: 6rem;
+  }
+  .header-text p {
+    font-size: 2rem;
+  }
+}
