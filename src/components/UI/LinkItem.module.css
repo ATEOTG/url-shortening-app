@@ -1,0 +1,60 @@
+.form-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.user-link {
+  font-size: 1.6rem;
+  padding: 1em 1em 0em 1em;
+  color: var(--dark-violet);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#shortened-link-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding: 0em 1em 1em 1em;
+}
+
+#shortened-link-section button {
+  font-size: 1.6rem;
+  border-radius: 5px;
+  padding: 0.5em 2em;
+}
+
+.shortened-link {
+  font-size: 1.6rem;
+  color: var(--cyan);
+}
+
+.horizontal-line {
+  align-self: flex-start;
+  width: 100%;
+  border-top: 1px solid var(--gray);
+}
+
+.copy-btn {
+  color: white;
+  background-color: var(--cyan);
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+
+  border: none;
+  border-radius: 28px;
+  padding: 0.6em 2em;
+}
+
+.copy-btn:hover {
+  cursor: pointer;
+  background-color: var(--cyan-light);
+}
+
+.copy-btn.copied {
+  background-color: var(--drk-violet);
+}
