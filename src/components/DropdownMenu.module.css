@@ -39,3 +39,9 @@
   max-width: 416px;
   width: 100%;
 }
+
+@media (min-width: 57em) {
+  .dropdown {
+    display: none;
+  }
+}

@@ -15,3 +15,58 @@
 .nav-menu {
   position: relative;
 }
+
+.desktop-nav {
+  display: none;
+}
+
+@media (min-width: 57em) {
+  .nav-menu {
+    display: none;
+  }
+
+  .logo-cont,
+  .desktop-nav,
+  .desktop-left,
+  .desktop-right {
+    display: flex;
+  }
+
+  .logo-cont {
+    width: 100%;
+    align-items: center;
+    gap: 2.5em;
+  }
+
+  .desktop-nav {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .desktop-left {
+    gap: 1.5em;
+  }
+
+  .desktop-left a,
+  .desktop-right a {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--gray-violet);
+  }
+  .desktop-left a:hover,
+  .desktop-right a:hover {
+    color: var(--dark-blue);
+  }
+
+  .desktop-right {
+    align-items: center;
+    gap: 1.5em;
+  }
+
+  #dr button {
+    font-size: 1.6rem;
+    padding: 0.5em 1em;
+  }
+}

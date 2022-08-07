@@ -3,6 +3,7 @@ import classes from "./Navigation.module.css";
 import logo from "../assets/images/logo.svg";
 import { RiMenuFill } from "react-icons/ri";
 import { RiCloseLine } from "react-icons/ri";
+import CTAButton from "./UI/CTAButton";
 import DropdownMenu from "./DropdownMenu";
 
 function Navigation() {
@@ -32,8 +33,19 @@ function Navigation() {
 
   return (
     <div className={classes.navigation}>
-      <div>
+      <div className={classes["logo-cont"]}>
         <img src={logo} alt="shortly-logo" />
+        <div className={classes["desktop-nav"]}>
+          <div className={classes["desktop-left"]}>
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">Resources</a>
+          </div>
+          <div id={classes.dr} className={classes["desktop-right"]}>
+            <a href="#">Login</a>
+            <CTAButton>Sign up</CTAButton>
+          </div>
+        </div>
       </div>
       <div className={classes["nav-menu"]}>{menu}</div>
       {menuToggle && <DropdownMenu />}
