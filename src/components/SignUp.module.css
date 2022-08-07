@@ -19,5 +19,10 @@
 @media (min-width: 56em) {
   .sign-up {
     background-image: url("../assets/images/bg-boost-desktop.svg");
+    padding: 2.5em 1em;
+  }
+
+  .sign-up h2 {
+    font-size: 4rem;
   }
 }

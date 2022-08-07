@@ -48,3 +48,27 @@
   outline: none;
   box-shadow: 0 0 0 0.2rem var(--red);
 }
+
+@media (min-width: 57em) {
+  #form {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    background-image: url("../../assets/images/bg-shorten-desktop.svg");
+    padding: 2.5em;
+  }
+
+  #form button {
+    padding: 0.9em 0.7em;
+  }
+
+  .input-field {
+    font-size: 2rem;
+  }
+
+  .input-cont p {
+    position: absolute;
+    font-size: 1.6rem;
+  }
+}

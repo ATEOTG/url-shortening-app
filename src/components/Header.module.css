@@ -35,7 +35,7 @@ header {
   header {
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 60fr 40fr;
     column-gap: 2em;
   }
 
@@ -54,8 +54,12 @@ header {
     font-size: 5rem;
   }
 
+  .header-text p {
+    width: 75%;
+  }
+
   .illustration {
-    width: 165%;
+    width: 145%;
     grid-column: 2/2;
   }
 }
