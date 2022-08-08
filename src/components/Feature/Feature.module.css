@@ -33,3 +33,29 @@
   align-items: center;
   gap: 5.5em;
 }
+
+@media (min-width: 57em) {
+  .feature-intro h2 {
+    font-size: 4rem;
+  }
+
+  .feature-intro p {
+    margin: 0 auto;
+    width: 60%;
+  }
+
+  .feature-container {
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 2em;
+    height: 350px;
+  }
+
+  #feature-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1232px;
+  }
+}

@@ -8,3 +8,9 @@
   border-radius: 5px;
   z-index: 999;
 }
+
+@media (min-width: 57em) {
+  .card {
+    align-items: flex-start;
+  }
+}

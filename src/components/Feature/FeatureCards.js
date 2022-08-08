@@ -9,7 +9,7 @@ import fullyCustomizable from "../../assets/images/icon-fully-customizable.svg";
 function FeatureCards() {
   return (
     <Fragment>
-      <Card childrenClass={classes["feature-card"]}>
+      <Card childrenClass={`${classes["feature-card"]} ${classes["first"]}`}>
         <FeatureCardIcon
           iconSrc={brandRecognition}
           iconAlt={"data chart icon"}
@@ -23,7 +23,7 @@ function FeatureCards() {
       <div className={classes["vertical-cont"]}>
         <div className={classes["vertical-line"]}></div>
       </div>
-      <Card childrenClass={classes["feature-card"]}>
+      <Card childrenClass={`${classes["feature-card"]} ${classes["second"]}`}>
         <FeatureCardIcon iconSrc={detailedRecords} iconAlt={"clock icon"} />
         <h3>Detailed Records</h3>
         <p>
@@ -31,7 +31,7 @@ function FeatureCards() {
           people engage with your content helps inform better decisions.
         </p>
       </Card>
-      <Card childrenClass={classes["feature-card"]}>
+      <Card childrenClass={`${classes["feature-card"]} ${classes["third"]}`}>
         <FeatureCardIcon
           iconSrc={fullyCustomizable}
           iconAlt={"different writing tools"}
@@ -39,7 +39,7 @@ function FeatureCards() {
 
         <h3>Fully Customizable</h3>
         <p>
-          Improve brand awareness and content discoverability throuhg
+          Improve brand awareness and content discoverability through
           customizable links, supercharging audience engagement.
         </p>
       </Card>

@@ -24,3 +24,37 @@
   height: 60rem;
   border-left: 8px solid var(--cyan);
 }
+
+@media (min-width: 57em) {
+  .feature-card h3 {
+    text-align: left;
+  }
+
+  .feature-card p {
+    text-align: left;
+  }
+
+  .feature-card.first {
+    align-self: flex-start;
+  }
+
+  .feature-card.second {
+    align-self: center;
+  }
+
+  .feature-card.third {
+    align-self: flex-end;
+  }
+
+  .vertical-line {
+    left: 426px;
+    bottom: -270px;
+    rotate: 90deg;
+  }
+}
+
+@media (min-width: 83em) {
+  .vertical-line {
+    left: 582px;
+  }
+}

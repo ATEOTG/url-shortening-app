@@ -27,7 +27,7 @@ function Feature() {
     <div className={classes.features}>
       <Form onUserSubmission={userLinkHandler} />
       <FormList userLinks={linkList} />
-      <div className={"container"}>
+      <div className={"container"} id={classes["feature-wrap"]}>
         <div className={classes["feature-intro"]}>
           <h2>Advanced Statistics</h2>
           <p>

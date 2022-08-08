@@ -11,9 +11,15 @@
   display: flex;
   top: 0;
   left: 0;
-  transform: translate(-50%, -150%);
+  transform: translate(-50%, -140%);
   position: absolute;
   background-color: var(--drk-violet);
   padding: 1.4em;
   border-radius: 50%;
+}
+
+@media (min-width: 57em) {
+  .circle {
+    transform: translate(0%, -140%);
+  }
 }
