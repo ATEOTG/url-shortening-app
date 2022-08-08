@@ -4,6 +4,8 @@ This is a solution to the [Shortly URL shortening API Challenge challenge on Fro
 
 ## Overview
 
+A Website that allows users to enter a valid link and in return get a short link that looks cleaner.
+
 ### Screenshot
 
 ## Desktop Version
