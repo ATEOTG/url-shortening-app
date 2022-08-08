@@ -43,14 +43,27 @@ footer {
 
 .navigation li {
   font-size: 1.5rem;
-  color: var(--gray);
   text-align: center;
+}
+
+.list-link:link,
+.list-link:visited {
+  text-decoration: none;
+  color: var(--gray);
+}
+.list-link:hover,
+.list-link:active {
+  color: var(--cyan);
 }
 
 .social-media-logos {
   margin-top: 1em;
   display: flex;
   gap: 1.5em;
+}
+
+.social-media-logo svg path:hover {
+  fill: var(--cyan);
 }
 
 @media (min-width: 56em) {
@@ -60,12 +73,14 @@ footer {
   }
 
   .footer {
-    justify-content: center;
-    gap: 5em;
+    max-width: 1434px;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 90%;
   }
 
   .footer-navs {
-    gap: 3em;
+    gap: 5em;
   }
 
   .logo {
