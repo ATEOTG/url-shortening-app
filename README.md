@@ -6,10 +6,10 @@ This is a solution to the [Shortly URL shortening API Challenge challenge on Fro
 
 ### Screenshot
 
-##Desktop
+## Desktop
 ![Screen Shot 2022-08-08 at 16 41 18](https://user-images.githubusercontent.com/25332391/183510685-3a70170b-fb31-400f-a9e1-a06f61a9d041.png)
 
-##Mobile
+## Mobile
 ![Screen Shot 2022-08-08 at 16 43 01](https://user-images.githubusercontent.com/25332391/183510811-6cd3bd92-5129-479e-b110-c5f272c1e7ff.png)
 
 
