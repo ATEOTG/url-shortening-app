@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import CTAButton from "../UI/CTAButton";
 import classes from "./Form.module.css";
+import { v4 as uuidv4 } from "uuid";
 
 function Form(props) {
   const [isValid, setIsValid] = useState(true);
@@ -23,7 +24,7 @@ function Form(props) {
     const shortLink = data.result.short_link;
 
     props.onUserSubmission({
-      id: data.result.code,
+      id: uuidv4(),
       initialLink: userLink,
       shortenedLink: shortLink,
     });

@@ -62,7 +62,7 @@ footer {
   gap: 1.5em;
 }
 
-.social-media-logo svg path:hover {
+.social-media-logo:hover svg path {
   fill: var(--cyan);
 }
 
@@ -84,6 +84,7 @@ footer {
   }
 
   .logo {
+    min-width: 121px;
     align-self: flex-start;
   }
 
