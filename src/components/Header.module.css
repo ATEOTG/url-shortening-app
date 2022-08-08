@@ -36,7 +36,6 @@ header {
     display: grid;
     align-items: center;
     grid-template-columns: 60fr 40fr;
-    column-gap: 2em;
   }
 
   .header-text {
@@ -51,7 +50,7 @@ header {
   }
 
   .header-text h1 {
-    font-size: 5rem;
+    font-size: 6rem;
   }
 
   .header-text p {
