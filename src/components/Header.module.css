@@ -64,9 +64,9 @@ header {
   }
 }
 
-@media (min-width: 72.5em) {
+@media (min-width: 80em) {
   .header-text h1 {
-    font-size: 6rem;
+    font-size: 8rem;
   }
   .header-text p {
     font-size: 2rem;
